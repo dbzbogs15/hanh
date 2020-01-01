@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>ThemAnh</servlet-name>
+        <servlet-class>controller.ThemAnh</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>controller.UserController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShoppingCartController</servlet-name>
+        <servlet-class>controller.ShoppingCartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadFile</servlet-name>
+        <servlet-class>controller.UploadFile</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>SearchController</servlet-name>
+    	<servlet-class>controller.SearchController</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>index</servlet-name>
+    	<servlet-class>controller.PagingController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ThemAnh</servlet-name>
+        <url-pattern>/ThemAnh</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/UserController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadFile</servlet-name>
+        <url-pattern>/UploadFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>SearchController</servlet-name>
+    	<url-pattern>/SearchController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>index</servlet-name>
+    	<url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
